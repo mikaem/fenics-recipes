@@ -28,6 +28,7 @@ requirements:
     - petsc <=3.6.2
     - petsc4py <=3.6.0
     - slepc <=3.6.2
+    - hwloc
     #- hdf5 ==1.8.14
 
   run:
@@ -46,6 +47,7 @@ requirements:
     - petsc <=3.6.2
     - petsc4py <=3.6.0
     - slepc <=3.6.2
+    - hwloc
     #- hdf5 ==1.8.14
 
 test:

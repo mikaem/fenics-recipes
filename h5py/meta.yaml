@@ -1,0 +1,36 @@
+package:
+  name: h5py
+  version: "2.6.0"
+
+source:
+  fn: 2.6.0.tar.gz
+  url: https://github.com/h5py/h5py/archive/2.6.0.tar.gz
+  md5: 613c5776192eaf02ff96a82dfc6d2e78
+
+requirements:
+  build:
+    - python
+    - mpich2
+    - numpy
+    - cython
+    - mpi4py
+    - six
+    - pkgconfig
+    - hdf5 ==1.8.14
+
+  run:
+    - python
+    - numpy
+    - mpich2
+    - mpi4py
+    - hdf5 ==1.8.14
+    - six
+    - unittest2    #[py26]
+
+test:
+  imports:
+    - h5py
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml

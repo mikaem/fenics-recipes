@@ -1,0 +1,42 @@
+package:
+  name: fenicstools
+  #version: "master"
+  version: "1.6.0"
+
+source:
+  fn: 1.6.tar.gz
+  url: https://github.com/mikaem/fenicstools/archive/1.6.tar.gz
+  md5: 27553a9d2c4ffa082583587659f1277a  
+  #git_url: https://github.com/mikaem/fenicstools.git
+  #git_tag: master
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - fenics
+    - pyvtk
+    - h5py ==2.6.0
+
+  run:
+    - fenics
+    - pyvtk
+    - mpi4py
+    - h5py ==2.6.0
+
+#test:
+    #requires:
+      #- fenics
+      #- pyvtk
+      #- h5py ==2.6.0
+    
+    #imports:
+      #- fenicstools
+
+    #requires:
+      #- pytest
+      
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
