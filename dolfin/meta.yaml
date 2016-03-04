@@ -14,7 +14,6 @@ requirements:
   build:
     - python
     - openblas
-    - atlas
     - cmake
     - sphinx
     - libxml2
@@ -28,13 +27,11 @@ requirements:
     - petsc <=3.6.2
     - petsc4py <=3.6.0
     - slepc <=3.6.2
-    - hwloc
     #- hdf5 ==1.8.14
 
   run:
     - python
     - openblas
-    - atlas
     - libxml2
     - swig
     - numpy
@@ -47,7 +44,6 @@ requirements:
     - petsc <=3.6.2
     - petsc4py <=3.6.0
     - slepc <=3.6.2
-    - hwloc
     #- hdf5 ==1.8.14
 
 test:
