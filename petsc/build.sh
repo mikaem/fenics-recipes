@@ -10,6 +10,7 @@ export LIBRARY_PATH=$PREFIX/lib
   --with-blas-lib=libopenblas.so \
   --with-mpi-dir=$PREFIX \
   --download-suitesparse \
+  --download-hwloc \
   --with-shared-libraries
 make
 make install
