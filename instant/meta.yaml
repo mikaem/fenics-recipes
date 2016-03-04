@@ -22,7 +22,6 @@ requirements:
     #- pkg-config
     - swig
     - gcc
-    - libgfortran
 
 test:
   imports:

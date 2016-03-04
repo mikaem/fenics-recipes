@@ -17,15 +17,15 @@ requirements:
 
   run:
     - python
-    - numpy
     - sympy
+    - numpy
 
-test:
-  imports:
-    - FIAT
+#test:
+  #imports:
+   #- FIAT
 
-  requires:
-    - nose
+  #requires:
+    #- nose
 
 about:
   home: http://fenicsproject.org/

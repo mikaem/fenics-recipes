@@ -14,12 +14,13 @@ requirements:
   build:
     - python
     - openblas
+    - atlas
     - cmake
     - sphinx
     - libxml2
-    - swig ==3.0.7
-    - numpy ==1.9
-    #- vtk
+    - swig
+    - numpy
+    - vtk
     - ffc ==1.6.0
     - ply
     - boost
@@ -27,14 +28,16 @@ requirements:
     - petsc <=3.6.2
     - petsc4py <=3.6.0
     - slepc <=3.6.2
+    #- hdf5 ==1.8.14
 
   run:
     - python
     - openblas
+    - atlas
     - libxml2
-    - swig ==3.0.7
-    - numpy ==1.9
-    #- vtk
+    - swig
+    - numpy
+    - vtk
     - ffc ==1.6.0
     - ufl ==1.6.0
     - ply
@@ -43,6 +46,7 @@ requirements:
     - petsc <=3.6.2
     - petsc4py <=3.6.0
     - slepc <=3.6.2
+    #- hdf5 ==1.8.14
 
 test:
   imports:
