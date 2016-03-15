@@ -1,9 +1,9 @@
 #!/bin/bash
 
-export CC=$PREFIX/bin/gcc
-export CXX=$PREFIX/bin/g++
+# export CC=$PREFIX/bin/gcc
+# export CXX=$PREFIX/bin/g++
 
-$PYTHON setup.py install --prefix=$PREFIX
+$PYTHON setup.py install --prefix=$PREFIX --single-version-externally-managed --record=/tmp/record.txt
 
 # Add more build steps here, if they are necessary.
 

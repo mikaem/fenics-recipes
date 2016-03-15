@@ -10,6 +10,8 @@ export LIBRARY_PATH=$PREFIX/lib
 export INCLUDE_PATH=$PREFIX/include
 export HDF5_DIR=$PREFIX
 export BLAS_DIR=$LIBRARY_PATH
+# To make dolfin pick up anaconda swig:
+ln -s ${PREFIX}/bin/swig ${PREFIX}/bin/swig3.0
 
 cmake .. \
   -DDOLFIN_ENABLE_VTK:BOOL=FALSE \

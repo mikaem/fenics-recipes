@@ -1,32 +1,36 @@
 package:
   name: ffc
-  version: "1.6.0"
+  #version: "1.6.0"
+  version: "1.7.0"
 
 source:
-  fn: ffc-1.6.0.tar.gz
-  url: https://bitbucket.org/fenics-project/ffc/downloads/ffc-1.6.0.tar.gz
-  md5: 358faa3e9da62a1b1a717070217b793e
+  #fn: ffc-1.6.0.tar.gz
+  #url: https://bitbucket.org/fenics-project/ffc/downloads/ffc-1.6.0.tar.gz
+  #md5: 358faa3e9da62a1b1a717070217b793e
+  git_url: https://bitbucket.org/fenics-project/ffc
+  git_tag: master 
 
+  
 build:
-  number: 4
+  number: 2
 
 requirements:
   build:
     - python
-    - numpy
+    - numpy 
     - swig
-    - gcc
-    - libgfortran
+    #- gcc
+    #- libgfortran
 
   run:
     - python
     - numpy
     - swig
-    - ufl ==1.6.0
-    - fiat ==1.6.0
-    - instant ==1.6.0
-    - libgcc
-    - libgfortran
+    - ufl ==1.7.0
+    - fiat ==1.7.0
+    - instant ==1.7.0
+    #- libgcc
+    #- libgfortran
 
 test:
   imports:

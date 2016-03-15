@@ -1,14 +1,18 @@
 package:
   name: dolfin
-  version: "1.6.0"
+  #version: "1.6.0"
+  version: "1.7.0"
 
 source:
-  fn: dolfin-1.6.0.tar.gz
-  url: https://bitbucket.org/fenics-project/dolfin/downloads/dolfin-1.6.0.tar.gz
-  md5: 35cb4baf7ab4152a40fb7310b34d5800
+  #fn: dolfin-1.6.0.tar.gz
+  #url: https://bitbucket.org/fenics-project/dolfin/downloads/dolfin-1.6.0.tar.gz
+  #md5: 35cb4baf7ab4152a40fb7310b34d5800
+  git_url: https://bitbucket.org/fenics-project/dolfin
+  git_tag: master 
+
 
 build:
-  number: 6
+  number: 2
 
 requirements:
   build:
@@ -18,17 +22,17 @@ requirements:
     - cmake
     - sphinx
     - libxml2
-    - swig
+    - swig 
     - numpy
-    - vtk
-    - ffc ==1.6.0
-    - ply
-    - boost
+    - mpi4py
+    - ffc ==1.7.0
+    - ply ==3.8
+    - boost ==1.57.0
     - eigen3
     - petsc <=3.6.2
     - petsc4py <=3.6.0
     - slepc <=3.6.2
-    #- hdf5 ==1.8.14
+    - hdf5 ==1.8.14
 
   run:
     - python
@@ -37,16 +41,16 @@ requirements:
     - libxml2
     - swig
     - numpy
-    - vtk
-    - ffc ==1.6.0
-    - ufl ==1.6.0
-    - ply
-    - boost
+    - mpi4py
+    - ffc ==1.7.0
+    - ufl ==1.7.0
+    - ply ==3.8
+    - boost ==1.57.0
     - eigen3
     - petsc <=3.6.2
     - petsc4py <=3.6.0
     - slepc <=3.6.2
-    #- hdf5 ==1.8.14
+    - hdf5 ==1.8.14
 
 test:
   imports:

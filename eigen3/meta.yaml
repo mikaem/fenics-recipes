@@ -7,17 +7,20 @@ source:
   url: http://bitbucket.org/eigen/eigen/get/3.2.1.tar.gz
   sha1: 96709ff139c80861e7b2cf65a9dfca8a8cc46eeb
 
+build:
+  number: 2
+  
 requirements:
   build:
-    - gcc
+    #- gcc
     - cmake
 
   run:
-    - libgcc
+    #- libgcc
 
 test:
   requires:
-    - gcc
+    #- gcc
 
   files:
     - test.cc

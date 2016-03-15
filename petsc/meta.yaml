@@ -8,24 +8,24 @@ source:
   md5: 5b6b7129ba02f4c6d107ae7671b80bb8
 
 build:
-  number: 3
+  number: 2
 
 requirements:
   build:
     - python
     - openblas
     - mpi4py
-    - gcc
+    #- gcc
 
   run:
     - python
     - openblas
     - mpi4py
-    - libgcc
+    #- libgcc
 
 test:
   requires:
-    - gcc
+    #- gcc
 
 about:
   home: http://www.mcs.anl.gov/petsc/
