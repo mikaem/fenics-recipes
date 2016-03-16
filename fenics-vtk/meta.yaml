@@ -2,12 +2,15 @@ package:
   name: fenics
   #version: "1.6.0"
   version: "1.7.0"
-
+  
 build:
   number: 2
-
+  features:
+    - vtk
+  
 requirements:
   run:
+    - vtk ==5.10.1
     - dolfin ==1.7.0
 
 about:
