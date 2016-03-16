@@ -7,22 +7,22 @@ source:
   git_url: https://bitbucket.org/slepc/slepc.git
 
 build:
-  number: 2
+  number: 3
 
 requirements:
   build:
     - python
-    #- gcc
+    - gcc
     - petsc <=3.6.2
 
   run:
     - python
-    #- libgcc
+    - libgcc
     - petsc <=3.6.2
 
 test:
   requires:
-    #- gcc
+    - gcc
 
 about:
   home: http://www.grycap.upv.es/slepc/

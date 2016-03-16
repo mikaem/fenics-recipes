@@ -8,19 +8,19 @@ source:
   sha1: 96709ff139c80861e7b2cf65a9dfca8a8cc46eeb
 
 build:
-  number: 2
+  number: 3
   
 requirements:
   build:
-    #- gcc
+    - gcc
     - cmake
 
   run:
-    #- libgcc
+    - libgcc
 
 test:
   requires:
-    #- gcc
+    - gcc
 
   files:
     - test.cc

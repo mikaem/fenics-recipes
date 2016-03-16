@@ -12,15 +12,15 @@ source:
 
   
 build:
-  number: 2
+  number: 3
 
 requirements:
   build:
     - python
     - numpy 
     - swig
-    #- gcc
-    #- libgfortran
+    - gcc
+    - libgfortran
 
   run:
     - python
@@ -29,8 +29,8 @@ requirements:
     - ufl ==1.7.0
     - fiat ==1.7.0
     - instant ==1.7.0
-    #- libgcc
-    #- libgfortran
+    - libgcc
+    - libgfortran
 
 test:
   imports:
