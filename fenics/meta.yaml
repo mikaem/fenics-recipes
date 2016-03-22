@@ -4,11 +4,12 @@ package:
   version: "1.7.0"
 
 build:
-  number: 2
+  number: 3
 
 requirements:
   run:
     - dolfin ==1.7.0
+    - hwloc
 
 about:
   home: http://www.fenicsproject.org
