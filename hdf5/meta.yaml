@@ -6,6 +6,9 @@ source:
   fn: hdf5-1.8.14.tar.bz2
   url: http://www.hdfgroup.org/ftp/HDF5/releases/hdf5-1.8.14/src/hdf5-1.8.14.tar.bz2
   md5: 719df6d46eea52e42dd97d59dcbf5311
+  #fn: hdf5-1.8.14.tar.gz
+  #url: http://www.hdfgroup.org/ftp/HDF5/releases/hdf5-1.8.14/src/CMake/HDF518CMake.tar.gz
+  #md5: 1f3dce5835c2b86009c50d582bc5bab0
 
 build:
   number: 3

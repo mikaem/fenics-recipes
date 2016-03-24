@@ -24,6 +24,8 @@ requirements:
     - cmake
     - swig
     - gcc
+    - libgcc
+    - libgfortran
 
 test:
   imports:
