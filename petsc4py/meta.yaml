@@ -13,13 +13,11 @@ build:
 requirements:
   build:
     - python
-    - openblas
     - numpy
     - petsc ==3.6.2
 
   run:
     - python
-    - openblas
     - numpy
     - petsc ==3.6.2
 

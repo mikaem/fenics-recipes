@@ -17,8 +17,6 @@ build:
 requirements:
   build:
     - python
-    - openblas
-    - atlas
     - cmake
     - sphinx
     - libxml2
@@ -36,8 +34,6 @@ requirements:
 
   run:
     - python
-    - openblas
-    - atlas
     - libxml2
     - swig
     - numpy

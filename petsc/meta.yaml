@@ -13,15 +13,11 @@ build:
 requirements:
   build:
     - python
-    - openblas
     - mpi4py
-    #- gcc
 
   run:
     - python
-    - openblas
     - mpi4py
-    #- libgcc
 
 test:
   requires:

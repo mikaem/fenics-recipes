@@ -2,11 +2,18 @@
 
 export LIBRARY_PATH=$PREFIX/lib
 
+# ln -s $PREFIX/bin/gfortran $PREFIX/bin/f95
+
 ./configure \
   --prefix=$PREFIX \
-  --with-lapack-lib=libopenblas.so \
-  --with-blas-lib=libopenblas.so \
+  --with-blas-lapack-dir=/usr/lib \
   --with-mpi-dir=$PREFIX \
+  --download-metis \
+  --download-parmetis \
+  --download-hypre \
+  --download-scalapack \
+  --download-mumps \
+  --download-superlu_dist \
   --download-suitesparse \
   --with-shared-libraries
 make
