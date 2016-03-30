@@ -1,6 +1,5 @@
 package:
   name: instant
-  #version: "1.6.0"
   version: "1.7.0"
 
 source:
@@ -11,7 +10,7 @@ source:
   git_tag: master 
 
 build:
-  number: 3
+  number: {{CONDA_BUILD_NUMBER}}
 
 requirements:
   build:

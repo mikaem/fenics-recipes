@@ -1,6 +1,5 @@
 package:
   name: dolfin
-  #version: "1.6.0"
   version: "1.7.0"
 
 source:
@@ -12,7 +11,7 @@ source:
 
 
 build:
-  number: 3
+  number: {{CONDA_BUILD_NUMBER}}
 
 requirements:
   build:
