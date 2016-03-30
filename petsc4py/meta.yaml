@@ -13,14 +13,16 @@ build:
 requirements:
   build:
     - python
-    - openblas
+    - mpi4py
+    - gcc
+    - libgfortran
     - numpy
     - petsc ==3.6.2
 
   run:
     - python
-    - openblas
     - numpy
+    - libgfortran
     - petsc ==3.6.2
 
 test:

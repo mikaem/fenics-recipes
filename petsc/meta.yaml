@@ -13,7 +13,6 @@ build:
 requirements:
   build:
     - python
-    - openblas
     - mpi4py
     - gcc
     - libgcc
@@ -22,7 +21,6 @@ requirements:
 
   run:
     - python
-    - openblas
     - mpi4py
     - libgcc
     - libgfortran

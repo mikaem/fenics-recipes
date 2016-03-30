@@ -2,11 +2,9 @@
 
 export LIBRARY_PATH=$PREFIX/lib
 
-ln -s $PREFIX/bin/gfortran $PREFIX/bin/f95
-
 ./configure \
   --prefix=$PREFIX \
-  --with-blas-lapack-lib=libopenblas.so \
+  --download-fblaslapack=yes \
   --with-mpi-dir=$PREFIX \
   --download-metis \
   --download-parmetis \
@@ -19,9 +17,6 @@ ln -s $PREFIX/bin/gfortran $PREFIX/bin/f95
 
 make
 make install
-
-# Add more build steps here, if they are necessary.
-# rm $PREFIX/bin/f95
 
 # See
 # http://docs.continuum.io/conda/build.html
