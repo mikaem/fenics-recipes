@@ -4,7 +4,7 @@ export LIBRARY_PATH=$PREFIX/lib
 
 ./configure \
   --prefix=$PREFIX \
-  --download-fblaslapack=yes \
+  --with-blas-lapack-lib=libopenblas.so \
   --with-mpi-dir=$PREFIX \
   --download-metis \
   --download-parmetis \

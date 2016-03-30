@@ -1,15 +1,17 @@
 # Remember
 # Fresh Anaconda 2.5.0
-# install gcc libgcc libgfortran
 # Check that gfortran version is anaconda 4.8.5
 # With Anaconda 4.0.0 gfortran picks up native compiler and messes up.
+# Fixed with
+# conda remove libgfortran
+# conda install gcc --force
+# anaconda openblas installs with libgfortran and as such it must be reinstalled from conda-recipes
 
 export CONDA_BUILD_NUMBER=4
 export CONDA_BUILD_LABEL=travis
 
 conda config --add channels mikaem/label/${CONDA_BUILD_LABEL}
 
-conda install gcc libgcc libgfortran
 ln -s $HOME/anaconda2/bin/gfortran $HOME/anaconda2/bin/f95
 
 # # Weak dependencies
@@ -42,4 +44,4 @@ anaconda upload --force /home/mikael/anaconda2/conda-bld/linux-64/ffc-1.7.0-py27
 conda build dolfin
 anaconda upload --force /home/mikael/anaconda2/conda-bld/linux-64/dolfin-1.7.0-py27_${CONDA_BUILD_NUMBER}.tar.bz2 --label ${CONDA_BUILD_LABEL}
 conda build fenics
-anaconda upload --force /home/mikael/anaconda2/conda-bld/linux-64/fenics-1.7.0-py27_${CONDA_BUILD_NUMBER}.tar.bz2 --label ${CONDA_BUILD_LABEL}
+anaconda upload --force /home/mikael/anaconda2/conda-bld/linux-64/fenics-1.7.0-${CONDA_BUILD_NUMBER}.tar.bz2 --label ${CONDA_BUILD_LABEL}

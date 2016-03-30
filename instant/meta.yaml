@@ -24,7 +24,6 @@ requirements:
     - swig
     - gcc
     - libgcc
-    - libgfortran
 
 test:
   imports:

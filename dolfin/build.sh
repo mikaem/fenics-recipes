@@ -9,7 +9,7 @@ CXX=mpic++
 export LIBRARY_PATH=$PREFIX/lib
 export INCLUDE_PATH=$PREFIX/include
 export HDF5_ROOT=$PREFIX
-export BLAS_DIR=$LIBRARY_PATH
+export BLAS_DIR=$PREFIX
 export UMFPACK_DIR=$PREFIX
 # To make dolfin pick up anaconda swig:
 ln -s ${PREFIX}/bin/swig ${PREFIX}/bin/swig3.0

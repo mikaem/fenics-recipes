@@ -13,17 +13,17 @@ build:
 requirements:
   build:
     - python
+    - openblas
     - mpi4py
     - gcc
     - libgcc
-    - libgfortran
     - hwloc
 
   run:
     - python
+    - openblas
     - mpi4py
     - libgcc
-    - libgfortran
     - hwloc
 
 test:

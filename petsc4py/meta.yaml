@@ -15,14 +15,12 @@ requirements:
     - python
     - mpi4py
     - gcc
-    - libgfortran
     - numpy
     - petsc ==3.6.2
 
   run:
     - python
     - numpy
-    - libgfortran
     - petsc ==3.6.2
 
 test:

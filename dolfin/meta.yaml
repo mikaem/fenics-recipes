@@ -17,7 +17,7 @@ requirements:
   build:
     - python
     - openblas
-    #- atlas
+    - atlas
     - cmake
     - sphinx
     - libxml2
@@ -29,14 +29,14 @@ requirements:
     - boost ==1.57.0
     - eigen3
     - petsc <=3.6.2
-    #- petsc4py <=3.6.0
+    - petsc4py <=3.6.0
     - slepc <=3.6.2
     - hdf5 ==1.8.14
 
   run:
     - python
     - openblas
-    #- atlas
+    - atlas
     - libxml2
     - swig
     - numpy
@@ -47,7 +47,7 @@ requirements:
     - boost ==1.57.0
     - eigen3
     - petsc <=3.6.2
-    #- petsc4py <=3.6.0
+    - petsc4py <=3.6.0
     - slepc <=3.6.2
     - hdf5 ==1.8.14
 
