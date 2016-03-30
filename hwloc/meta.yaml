@@ -8,7 +8,7 @@ source:
   md5: e4ca55c2a5c5656da4a4e37c8fc51b23
 
 build:
-  number: 3
+  number: {{CONDA_BUILD_NUMBER}}
 
 requirements:
 

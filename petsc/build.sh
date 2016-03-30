@@ -16,6 +16,7 @@ ln -s $PREFIX/bin/gfortran $PREFIX/bin/f95
   --download-superlu_dist \
   --download-suitesparse \
   --with-shared-libraries
+
 make
 make install
 
