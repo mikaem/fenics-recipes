@@ -10,17 +10,14 @@ source:
   git_url: https://bitbucket.org/fenics-project/ffc
   git_tag: master 
 
-  
 build:
-  number: 2
+  number: {{CONDA_BUILD_NUMBER}}
 
 requirements:
   build:
     - python
     - numpy 
     - swig
-    #- gcc
-    #- libgfortran
 
   run:
     - python
@@ -29,8 +26,6 @@ requirements:
     - ufl ==1.7.0
     - fiat ==1.7.0
     - instant ==1.7.0
-    #- libgcc
-    #- libgfortran
 
 test:
   imports:
@@ -52,6 +47,3 @@ about:
   license: The GNU Lesser General Public License, version 3.0
   summary: 'The FEniCS Form Compiler'
 
-# See
-# http://docs.continuum.io/conda/build.html for
-# more information about meta.yaml

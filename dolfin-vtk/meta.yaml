@@ -10,9 +10,8 @@ source:
   git_url: https://bitbucket.org/fenics-project/dolfin
   git_tag: master 
 
-
 build:
-  number: 2
+  number: {{CONDA_BUILD_NUMBER}}
   features:
     - vtk
 
@@ -60,7 +59,3 @@ about:
   home: http://www.fenicsproject.org
   license: The GNU Lesser General Public License, version 3.0
   summary: 'C++/Python library for solving differential equations'
-
-# See
-# http://docs.continuum.io/conda/build.html for
-# more information about meta.yaml

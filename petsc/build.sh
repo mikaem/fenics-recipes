@@ -6,8 +6,8 @@ export LIBRARY_PATH=$PREFIX/lib
 
 ./configure \
   --prefix=$PREFIX \
-  --with-blas-lapack-dir=/usr/lib \
   --with-mpi-dir=$PREFIX \
+  --download-fblaslapack \
   --download-metis \
   --download-parmetis \
   --download-hypre \

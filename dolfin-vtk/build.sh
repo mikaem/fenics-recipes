@@ -10,8 +10,8 @@ export LIBRARY_PATH=$PREFIX/lib
 export INCLUDE_PATH=$PREFIX/include
 export HDF5_DIR=$PREFIX
 export PETSC_DIR=$PREFIX
-export BLAS_DIR=/usr/lib
-export LAPACK_DIR=/usr/lib
+export BLAS_DIR=$PREFIX/lib
+export LAPACK_DIR=$PREFIX/lib
 
 # To make dolfin pick up anaconda swig:
 ln -s ${PREFIX}/bin/swig ${PREFIX}/bin/swig3.0
