@@ -23,7 +23,6 @@ requirements:
     - numpy
     - cmake
     - swig
-    #- gcc
 
 test:
   imports:

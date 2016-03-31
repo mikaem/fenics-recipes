@@ -1,10 +1,9 @@
 package:
   name: fenics
-  #version: "1.6.0"
   version: "1.7.0"
   
 build:
-  number: 2
+  number: {{CONDA_BUILD_NUMBER}}
   features:
     - vtk
   
@@ -17,6 +16,3 @@ about:
   home: http://www.fenicsproject.org
   summary: 'FEniCS is a collection of free software for automated, efficient solution of differential equations'
 
-# See
-# http://docs.continuum.io/conda/build.html for
-# more information about meta.yaml
