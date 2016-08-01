@@ -8,7 +8,7 @@ source:
   md5: 613c5776192eaf02ff96a82dfc6d2e78
 
 build:
-  number: 3
+  number: 6
 
 requirements:
   build:
@@ -17,6 +17,7 @@ requirements:
     - cython
     - mpi4py
     - six
+    - gcc
     - pkgconfig
     - hdf5 ==1.8.14
 

@@ -1,14 +1,13 @@
 package:
   name: ffc
-  version: "1.7.0"
+  version: {{FENICS_VERSION}}
 
 source:
   #fn: ffc-1.6.0.tar.gz
   #url: https://bitbucket.org/fenics-project/ffc/downloads/ffc-1.6.0.tar.gz
   #md5: 358faa3e9da62a1b1a717070217b793e
   git_url: https://bitbucket.org/fenics-project/ffc
-  git_tag: master 
-
+  git_tag: master
   
 build:
   number: {{CONDA_BUILD_NUMBER}}
@@ -24,12 +23,16 @@ requirements:
     - python
     - numpy
     - swig
-    - ufl ==1.7.0
-    - fiat ==1.7.0
-    - instant ==1.7.0
+    - ufl =={{FENICS_VERSION}}
+    - fiat =={{FENICS_VERSION}}
+    - instant =={{FENICS_VERSION}}
     - libgcc
 
 test:
+  requires:
+    - pytest
+    - dijitso
+    
   imports:
     - ffc
     - ffc.backends

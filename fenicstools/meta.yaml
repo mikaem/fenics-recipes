@@ -1,7 +1,6 @@
 package:
   name: fenicstools
-  #version: "1.6.0"
-  version: "1.7.0"
+  version: {{FENICS_VERSION}}
   
 source:
   #fn: 1.6.tar.gz
@@ -15,20 +14,20 @@ build:
 
 requirements:
   build:
-    - fenics ==1.7.0
+    - fenics =={{FENICS_VERSION}}
     - pyvtk
     - h5py ==2.6.0
 
   run:
-    - fenics ==1.7.0
+    - fenics =={{FENICS_VERSION}}
     - pyvtk
     - mpi4py
     - h5py ==2.6.0
-    - ffc ==1.7.0
+    - ffc =={{FENICS_VERSION}}
 
 test:
     requires:
-      - fenics ==1.7.0
+      - fenics =={{FENICS_VERSION}}
       - pyvtk
       - h5py ==2.6.0
       - pytest

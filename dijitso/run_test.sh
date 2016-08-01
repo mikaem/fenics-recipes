@@ -1,2 +1,2 @@
 cd $SRC_DIR/test
-py.test
+./runtests.sh

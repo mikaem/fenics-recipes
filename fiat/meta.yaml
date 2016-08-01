@@ -1,13 +1,13 @@
 package:
   name: fiat
-  version: "1.7.0"
+  version: {{FENICS_VERSION}}
   
 source:
   #fn: fiat-1.6.0.tar.gz
   #url: https://bitbucket.org/fenics-project/fiat/downloads/fiat-1.6.0.tar.gz
   #md5: f4509d05c911fd93cea8d288a78a6c6f
   git_url: https://bitbucket.org/fenics-project/fiat
-  git_tag: master 
+  git_tag: master
   
 build:
   number: {{CONDA_BUILD_NUMBER}}
@@ -17,11 +17,13 @@ requirements:
     - python
     - sympy
     - numpy
+    - six
 
   run:
     - python
     - sympy
     - numpy
+    - six
 
 test:
   imports:

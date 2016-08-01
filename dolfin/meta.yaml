@@ -1,6 +1,6 @@
 package:
   name: dolfin
-  version: "1.7.0"
+  version: {{FENICS_VERSION}}
 
 source:
   #fn: dolfin-1.6.0.tar.gz
@@ -8,7 +8,6 @@ source:
   #md5: 35cb4baf7ab4152a40fb7310b34d5800
   git_url: https://bitbucket.org/fenics-project/dolfin
   git_tag: master 
-
 
 build:
   number: {{CONDA_BUILD_NUMBER}}
@@ -24,7 +23,8 @@ requirements:
     - swig 
     - numpy
     - mpi4py
-    - ffc ==1.7.0
+    - ffc =={{FENICS_VERSION}}
+    - dijitso =={{FENICS_VERSION}}
     - ply ==3.8
     - boost ==1.57.0
     - eigen3
@@ -41,8 +41,9 @@ requirements:
     - swig
     - numpy
     - mpi4py
-    - ffc ==1.7.0
-    - ufl ==1.7.0
+    - ffc =={{FENICS_VERSION}}
+    - dijitso =={{FENICS_VERSION}}
+    - ufl =={{FENICS_VERSION}}
     - ply ==3.8
     - boost ==1.57.0
     - eigen3
@@ -60,6 +61,3 @@ about:
   license: The GNU Lesser General Public License, version 3.0
   summary: 'C++/Python library for solving differential equations'
 
-# See
-# http://docs.continuum.io/conda/build.html for
-# more information about meta.yaml
