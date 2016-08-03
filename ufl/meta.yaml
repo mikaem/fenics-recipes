@@ -1,14 +1,14 @@
 package:
   name: ufl
-  #version: "1.6.0"
-  version: "1.7.0"
+  version: {{FENICS_VERSION}}
 
 source:
   #fn: ufl-1.6.0.tar.gz
   #url: https://bitbucket.org/fenics-project/ufl/downloads/ufl-1.6.0.tar.gz
   #md5: c40c5f04eaa847377ab2323122284016
   git_url: https://bitbucket.org/fenics-project/ufl
-  git_tag: master 
+  #git_tag: master 
+  git_tag: ufl-{{FENICS_GIT_TAG}}
 
 build:
   number: {{CONDA_BUILD_NUMBER}}
@@ -36,7 +36,7 @@ test:
   commands:
 #    - ufl-convert --help  # See #55
     - ufl-version
-    - ufl2py --help
+    #- ufl2py --help
 #    - form2ufl --help  # See #56
 
   requires:

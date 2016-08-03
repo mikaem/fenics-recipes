@@ -1,20 +1,17 @@
 package:
   name: instant
-  #version: "1.6.0"
-  version: "1.7.0"
+  version: {{FENICS_VERSION}}
 
 source:
-  #fn: instant-1.6.0.tar.gz 
-  #url: https://bitbucket.org/fenics-project/instant/downloads/instant-1.6.0.tar.gz 
-  #md5: 5f2522eb032a5bebbad6597b6fe0732a 
   git_url: https://bitbucket.org/fenics-project/instant
-  git_tag: master 
+  #git_tag: master 
+  git_tag: instant-{{FENICS_GIT_TAG}}
 
 build:
   number: {{CONDA_BUILD_NUMBER}}
 
 requirements:
-  build:
+  build:            
     - python
     - numpy
 
@@ -33,7 +30,7 @@ test:
     - instant-showcache
 
   requires:
-    - nose
+    - pytest
 
 about:
   home: http://www.fenicsproject.org

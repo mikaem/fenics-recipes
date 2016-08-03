@@ -1,6 +1,6 @@
 package:
   name: fenics
-  version: "1.7.0"
+  version: {{FENICS_VERSION}}
   
 build:
   number: {{CONDA_BUILD_NUMBER}}
@@ -10,7 +10,7 @@ build:
 requirements:
   run:
     - vtk ==5.10.1
-    - dolfin ==1.7.0
+    - dolfin =={{FENICS_VERSION}}
 
 about:
   home: http://www.fenicsproject.org

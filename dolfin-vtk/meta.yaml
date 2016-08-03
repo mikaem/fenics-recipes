@@ -1,14 +1,11 @@
 package:
   name: dolfin
-  #version: "1.6.0"
-  version: "1.7.0"
+  version: {{FENICS_VERSION}}
 
 source:
-  #fn: dolfin-1.6.0.tar.gz
-  #url: https://bitbucket.org/fenics-project/dolfin/downloads/dolfin-1.6.0.tar.gz
-  #md5: 35cb4baf7ab4152a40fb7310b34d5800
   git_url: https://bitbucket.org/fenics-project/dolfin
-  git_tag: master 
+  #git_tag: master 
+  git_tag: dolfin-{{FENICS_GIT_TAG}}
 
 build:
   number: {{CONDA_BUILD_NUMBER}}
@@ -25,7 +22,7 @@ requirements:
     - numpy
     - mpi4py
     - vtk ==5.10.1
-    - ffc ==1.7.0
+    - ffc =={{FENICS_VERSION}}
     - ply ==3.8
     - boost ==1.57.0
     - eigen3
@@ -41,8 +38,8 @@ requirements:
     - numpy
     - mpi4py
     - vtk ==5.10.1
-    - ffc ==1.7.0
-    - ufl ==1.7.0
+    - ffc =={{FENICS_VERSION}}
+    - ufl =={{FENICS_VERSION}}
     - ply ==3.8
     - boost ==1.57.0
     - eigen3

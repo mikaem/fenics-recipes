@@ -1,1 +1,1 @@
-# nosetests $SRC_DIR/test
+nosetests $SRC_DIR/test

@@ -1,14 +1,13 @@
 package:
   name: fenics
-  #version: "1.6.0"
-  version: "1.7.0"
+  version: {{FENICS_VERSION}}
 
 build:
   number: {{CONDA_BUILD_NUMBER}}
 
 requirements:
   run:
-    - dolfin ==1.7.0
+    - dolfin =={{FENICS_VERSION}}
 
 about:
   home: http://www.fenicsproject.org
