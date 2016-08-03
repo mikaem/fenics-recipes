@@ -3,11 +3,9 @@ package:
   version: {{FENICS_VERSION}}
 
 source:
-  #fn: dolfin-1.6.0.tar.gz
-  #url: https://bitbucket.org/fenics-project/dolfin/downloads/dolfin-1.6.0.tar.gz
-  #md5: 35cb4baf7ab4152a40fb7310b34d5800
   git_url: https://bitbucket.org/fenics-project/dolfin
-  git_tag: master 
+  #git_tag: master 
+  git_tag: dolfin-{{FENICS_GIT_TAG}}
 
 build:
   number: {{CONDA_BUILD_NUMBER}}

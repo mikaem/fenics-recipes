@@ -4,7 +4,8 @@ package:
 
 source:
   git_url: https://bitbucket.org/fenics-project/dijitso
-  git_tag: master
+  #git_tag: master
+  git_tag: dijitso-{{FENICS_GIT_TAG}}
 
 build:
   number: {{CONDA_BUILD_NUMBER}}
@@ -19,6 +20,7 @@ requirements:
     - python
     - numpy
     - six
+    - instant =={{FENICS_VERSION}}
 
 test:
   imports:

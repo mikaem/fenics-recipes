@@ -1,2 +1,2 @@
 cd $SRC_DIR/test
-py.test
+python run_tests.py
