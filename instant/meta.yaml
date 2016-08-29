@@ -4,8 +4,8 @@ package:
 
 source:
   git_url: https://bitbucket.org/fenics-project/instant
-  #git_tag: master 
-  git_tag: instant-{{FENICS_GIT_TAG}}
+  git_tag: master 
+  #git_tag: instant-{{FENICS_GIT_TAG}}
 
 build:
   number: {{CONDA_BUILD_NUMBER}}
@@ -18,7 +18,7 @@ requirements:
   run:
     - python
     - numpy
-    - cmake
+    #- cmake
     - swig
 
 test:

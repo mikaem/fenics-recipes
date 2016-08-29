@@ -1,5 +1,5 @@
 package:
-  name: h5py
+  name: h5py-parallel
   version: "2.6.0"
 
 source:
@@ -18,13 +18,13 @@ requirements:
     - mpi4py
     - six
     - pkgconfig
-    - hdf5 ==1.8.14
+    - hdf5-parallel
 
   run:
     - python
     - numpy
     - mpi4py
-    - hdf5 ==1.8.14
+    - hdf5-parallel
     - six
 
 test:

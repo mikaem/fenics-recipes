@@ -13,36 +13,36 @@ build:
 requirements:
   build:
     - python
-    - cmake
-    - sphinx
-    - libxml2
-    - swig 
-    - numpy
+    #- cmake
+    - boost
     - mpi4py
-    - ffc =={{FENICS_VERSION}}
-    - ply ==3.8
-    - boost ==1.57.0
     - eigen3
     - petsc <=3.6.2
     - petsc4py <=3.6.0
     - slepc <=3.6.2
-    - hdf5 ==1.8.14
+    - hdf5-parallel
+    - sphinx
+    #- libxml2
+    - swig 
+    - numpy
+    - ffc =={{FENICS_VERSION}}
+    - ply ==3.8
 
   run:
     - python
-    - libxml2
-    - swig
-    - numpy
+    - boost
     - mpi4py
-    - ffc =={{FENICS_VERSION}}
-    - ufl =={{FENICS_VERSION}}
-    - ply ==3.8
-    - boost ==1.57.0
     - eigen3
     - petsc <=3.6.2
     - petsc4py <=3.6.0
     - slepc <=3.6.2
-    - hdf5 ==1.8.14
+    - hdf5-parallel
+    #- libxml2
+    - swig
+    - numpy
+    - ffc =={{FENICS_VERSION}}
+    - ufl =={{FENICS_VERSION}}
+    - ply ==3.8
 
 test:
   imports:

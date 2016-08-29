@@ -4,8 +4,8 @@ package:
 
 source:
   git_url: https://bitbucket.org/fenics-project/ffc
-  #git_tag: master 
-  git_tag: ffc-{{FENICS_GIT_TAG}}
+  git_tag: master 
+  #git_tag: ffc-{{FENICS_GIT_TAG}}
 
 build:
   number: {{CONDA_BUILD_NUMBER}}
@@ -23,6 +23,7 @@ requirements:
     - ufl =={{FENICS_VERSION}}
     - fiat =={{FENICS_VERSION}}
     - instant =={{FENICS_VERSION}}
+    - dijitso =={{FENICS_VERSION}}
 
 test:
   imports:

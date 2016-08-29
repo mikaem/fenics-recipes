@@ -14,10 +14,12 @@ requirements:
   build:
     - python
     - mpi4py
+    - hdf5-parallel
 
   run:
     - python
     - mpi4py
+    - hdf5-parallel
 
 test:
   requires:

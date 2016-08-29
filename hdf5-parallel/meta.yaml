@@ -1,5 +1,5 @@
 package:
-  name: hdf5
+  name: hdf5-parallel
   version: 1.8.14
 
 source:
@@ -12,11 +12,13 @@ build:
 
 requirements:
   build:
+    - python
     - zlib
     - mpi4py
 
   run:
     - zlib
+    - mpi4py
 
 about:
   home: http://www.hdfgroup.org/HDF5/
