@@ -1,7 +1,7 @@
 export CONDA_BUILD_DIR=$HOME/miniconda/conda-bld/linux-64
 export FENICS_VERSION=2016.2.dev
 export FENICS_GIT_TAG=2016.1.0
-export CONDA_BUILD_NUMBER=12
+export CONDA_BUILD_NUMBER=13
 export CONDA_BUILD_LABEL=docker-dev
 
 conda config --add channels mikaem/label/${CONDA_BUILD_LABEL}
@@ -19,9 +19,5 @@ conda build ffc
 anaconda upload --force ${CONDA_BUILD_DIR}/ffc-${FENICS_VERSION}-py27_${CONDA_BUILD_NUMBER}.tar.bz2 --label ${CONDA_BUILD_LABEL}
 conda build dolfin
 anaconda upload --force ${CONDA_BUILD_DIR}/dolfin-${FENICS_VERSION}-py27_${CONDA_BUILD_NUMBER}.tar.bz2 --label ${CONDA_BUILD_LABEL}
-# conda build dolfin-vtk
-# anaconda upload --force ${CONDA_BUILD_DIR}/dolfin-${FENICS_VERSION}-py27_vtk_${CONDA_BUILD_NUMBER}.tar.bz2 --label ${CONDA_BUILD_LABEL}
 conda build fenics
 anaconda upload --force ${CONDA_BUILD_DIR}/fenics-${FENICS_VERSION}-${CONDA_BUILD_NUMBER}.tar.bz2 --label ${CONDA_BUILD_LABEL}
-# conda build fenics-vtk
-# anaconda upload --force ${CONDA_BUILD_DIR}/fenics-${FENICS_VERSION}-vtk_${CONDA_BUILD_NUMBER}.tar.bz2 --label ${CONDA_BUILD_LABEL}
