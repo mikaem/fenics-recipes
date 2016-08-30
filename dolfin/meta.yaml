@@ -14,27 +14,29 @@ requirements:
   build:
     - python
     - openblas
-    - atlas
-    - cmake
+    #- atlas
+    #- cmake
+    - gcc ==4.8.5
     - sphinx
     - libxml2
     - swig 
     - numpy
     - mpi4py
+    - mpich2
     - ffc =={{FENICS_VERSION}}
     - dijitso =={{FENICS_VERSION}}
     - ply ==3.8
-    - boost ==1.57.0
+    - boost
     - eigen3
-    - petsc <=3.6.2
-    - petsc4py <=3.6.0
-    - slepc <=3.6.2
-    - hdf5 ==1.8.14
+    - petsc ==3.7.3
+    - petsc4py ==3.7.0
+    - slepc ==3.7.2
+    - hdf5-parallel
 
   run:
     - python
     - openblas
-    - atlas
+    #- atlas
     - libxml2
     - swig
     - numpy
@@ -43,12 +45,13 @@ requirements:
     - dijitso =={{FENICS_VERSION}}
     - ufl =={{FENICS_VERSION}}
     - ply ==3.8
-    - boost ==1.57.0
+    - boost
     - eigen3
-    - petsc <=3.6.2
-    - petsc4py <=3.6.0
-    - slepc <=3.6.2
-    - hdf5 ==1.8.14
+    - petsc ==3.7.3
+    - petsc4py ==3.7.0
+    - slepc ==3.7.2
+    - hdf5-parallel
+    - libgcc ==4.8.5
 
 test:
   imports:

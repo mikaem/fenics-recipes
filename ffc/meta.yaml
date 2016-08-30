@@ -18,7 +18,7 @@ requirements:
     - python
     - numpy 
     - swig
-    - gcc
+    - gcc ==4.8.5
 
   run:
     - python
@@ -27,7 +27,7 @@ requirements:
     - ufl =={{FENICS_VERSION}}
     - fiat =={{FENICS_VERSION}}
     - instant =={{FENICS_VERSION}}
-    - libgcc
+    - libgcc ==4.8.5
 
 test:
   requires:

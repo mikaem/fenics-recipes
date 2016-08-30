@@ -13,7 +13,14 @@ build:
 requirements:
 
   build:
-    - libxml2
-    - mpich2
+    - gcc ==4.8.5
+    #- libxml2
+    - icu
+    #- mpich2
+
+  run:
+    - icu
+    - libgcc ==4.8.5
     
+
 

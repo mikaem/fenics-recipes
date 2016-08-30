@@ -12,15 +12,15 @@ build:
   
 requirements:
   build:
-    - gcc
-    - cmake
+    - gcc ==4.8.5
+    #- cmake
 
   run:
-    - libgcc
+    - libgcc ==4.8.5
 
 test:
   requires:
-    - gcc
+    - gcc ==4.8.5
 
   files:
     - test.cc

@@ -3,9 +3,6 @@ package:
   version: {{FENICS_VERSION}}
 
 source:
-  #fn: instant-1.6.0.tar.gz 
-  #url: https://bitbucket.org/fenics-project/instant/downloads/instant-1.6.0.tar.gz 
-  #md5: 5f2522eb032a5bebbad6597b6fe0732a 
   git_url: https://bitbucket.org/fenics-project/instant
   #git_tag: master
   git_tag: instant-{{FENICS_GIT_TAG}}
@@ -21,10 +18,9 @@ requirements:
   run:
     - python
     - numpy
-    - cmake
     - swig
-    - gcc
-    - libgcc
+    - gcc ==4.8.5
+    - libgcc ==4.8.5
 
 test:
   imports:

@@ -10,6 +10,7 @@ export LIBRARY_PATH=$PREFIX/lib
   --download-parmetis \
   --download-hypre \
   --download-scalapack \
+  --download-hwloc \
   --download-mumps \
   --download-superlu_dist \
   --download-suitesparse \
