@@ -4,8 +4,8 @@ package:
 
 source:
   git_url: https://bitbucket.org/fenics-project/dolfin
-  #git_tag: master 
-  git_tag: dolfin-{{FENICS_GIT_TAG}}
+  git_tag: master 
+  #git_tag: dolfin-{{FENICS_GIT_TAG}}
 
 build:
   number: {{CONDA_BUILD_NUMBER}}
@@ -13,16 +13,8 @@ build:
 requirements:
   build:
     - python
-    #- cmake
-    - boost
-    - mpi4py
     - eigen3
-    - petsc <=3.6.2
-    - petsc4py <=3.6.0
-    - slepc <=3.6.2
-    - hdf5-parallel
     - sphinx
-    #- libxml2
     - swig 
     - numpy
     - ffc =={{FENICS_VERSION}}
@@ -30,14 +22,7 @@ requirements:
 
   run:
     - python
-    - boost
-    - mpi4py
     - eigen3
-    - petsc <=3.6.2
-    - petsc4py <=3.6.0
-    - slepc <=3.6.2
-    - hdf5-parallel
-    #- libxml2
     - swig
     - numpy
     - ffc =={{FENICS_VERSION}}

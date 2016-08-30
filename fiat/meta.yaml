@@ -1,6 +1,5 @@
 package:
   name: fiat
-  #version: "1.6.0"
   version: {{FENICS_VERSION}}
   
 source:
