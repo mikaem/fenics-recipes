@@ -13,7 +13,7 @@ build:
 requirements:
   build:
     - python
-    - eigen3
+    #- eigen3
     - sphinx
     - swig 
     - numpy
@@ -22,7 +22,7 @@ requirements:
 
   run:
     - python
-    - eigen3
+    #- eigen3
     - swig
     - numpy
     - ffc =={{FENICS_VERSION}}
