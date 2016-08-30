@@ -24,12 +24,12 @@ requirements:
     - ffc =={{FENICS_VERSION}}
     - dijitso =={{FENICS_VERSION}}
     - ply ==3.8
-    - boost ==1.57.0
+    - boost ==1.60.0
     - eigen3
-    - petsc <=3.6.2
-    - petsc4py <=3.6.0
-    - slepc <=3.6.2
-    - hdf5 ==1.8.14
+    - petsc <=3.7.3
+    - petsc4py <=3.7.0
+    - slepc <=3.7.2
+    - hdf5-parallel
 
   run:
     - python
@@ -43,12 +43,12 @@ requirements:
     - dijitso =={{FENICS_VERSION}}
     - ufl =={{FENICS_VERSION}}
     - ply ==3.8
-    - boost ==1.57.0
+    - boost ==1.60.0
     - eigen3
-    - petsc <=3.6.2
-    - petsc4py <=3.6.0
-    - slepc <=3.6.2
-    - hdf5 ==1.8.14
+    - petsc <=3.7.3
+    - petsc4py <=3.7.0
+    - slepc <=3.7.2
+    - hdf5-parallel
 
 test:
   imports:

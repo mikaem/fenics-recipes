@@ -1,5 +1,5 @@
 package:
-  name: hdf5
+  name: hdf5-parallel
   version: 1.8.14
 
 source:
@@ -8,13 +8,14 @@ source:
   md5: 719df6d46eea52e42dd97d59dcbf5311
 
 build:
-  number: 6
+  number: {{CONDA_BUILD_NUMBER}}
 
 requirements:
   build:
     - zlib
     - mpi4py
-    - gcc
+    - gcc ==4.8.5
+    - cmake
 
   run:
     - zlib

@@ -1,5 +1,5 @@
 package:
-  name: h5py
+  name: h5py-parallel
   version: "2.6.0"
 
 source:
@@ -8,7 +8,7 @@ source:
   md5: 613c5776192eaf02ff96a82dfc6d2e78
 
 build:
-  number: 6
+  number: {{CONDA_BUILD_NUMBER}}
 
 requirements:
   build:
@@ -17,15 +17,15 @@ requirements:
     - cython
     - mpi4py
     - six
-    - gcc
+    - gcc ==4.8.5
     - pkgconfig
-    - hdf5 ==1.8.14
+    - hdf5-parallel
 
   run:
     - python
     - numpy
     - mpi4py
-    - hdf5 ==1.8.14
+    - hdf5-parallel
     - six
 
 test:

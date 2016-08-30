@@ -23,8 +23,8 @@ requirements:
     - numpy
     - cmake
     - swig
-    - gcc
-    - libgcc
+    - gcc ==4.8.5
+    - libgcc ==4.8.5
 
 test:
   imports:

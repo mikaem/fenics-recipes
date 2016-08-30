@@ -1,11 +1,11 @@
 package:
   name: petsc4py
-  version: "3.6.0"
+  version: "3.7.0"
 
 source:
-  fn: petsc4py-3.6.0.tar.gz
-  url: https://bitbucket.org/petsc/petsc4py/downloads/petsc4py-3.6.0.tar.gz
-  md5: e63a8e30318b5de9ffb081832e9daf30
+  fn: petsc4py-3.7.0.tar.gz
+  url: https://bitbucket.org/petsc/petsc4py/downloads/petsc4py-3.7.0.tar.gz
+  md5: 816a20040a6a477bd637f397c9fb5b6d
 
 build:
   number: {{CONDA_BUILD_NUMBER}}
@@ -14,14 +14,14 @@ requirements:
   build:
     - python
     - mpi4py
-    - gcc
+    - gcc ==4.8.5
     - numpy
-    - petsc ==3.6.2
+    - petsc ==3.7.3
 
   run:
     - python
     - numpy
-    - petsc ==3.6.2
+    - petsc ==3.7.3
 
 test:
   imports:
