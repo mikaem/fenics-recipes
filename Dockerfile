@@ -32,7 +32,8 @@ RUN . /home/travis/travis.conf && \
     echo '. ~/travis.conf' >> /home/travis/.profile
 
 USER root
-RUN git clone https://github.com/mikaem/conda-recipes.git && cd conda-recipes && git checkout docker-travis && cd .. && \
+RUN cd /home/travis && \
+    git clone https://github.com/mikaem/conda-recipes.git && cd conda-recipes && git checkout docker-travis && cd .. && \
     git clone https://github.com/mikaem/fenics-recipes.git && cd fenics-recipes && git checkout docker-travis && \
     chmod a+x build_fenics_deps.sh && \
     ./build_fenics_deps.sh && \
