@@ -28,7 +28,7 @@ CMD ["/bin/bash","-i"]
 
 USER travis
 COPY travis.conf /home/travis/travis.conf
-RUN . /home/travis/travis.conf
+RUN . /home/travis/travis.conf && \
     echo '. ~/travis.conf' >> /home/travis/.profile
 
 USER root
