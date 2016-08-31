@@ -1,10 +1,4 @@
 
-export CONDA_BUILD_NUMBER=10
-export CONDA_BUILD_LABEL=docker-travis
-export CONDA_BUILD_DIR=$HOME/miniconda/conda-bld/linux-64
-export FENICS_VERSION=2016.1
-export FENICS_GIT_TAG=2016.1.0
-
 conda config --add channels mikaem/label/${CONDA_BUILD_LABEL}
 
 # Upload all dependencies if not already there
