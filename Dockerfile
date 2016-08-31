@@ -10,7 +10,7 @@ COPY set-home-permissions.sh /etc/my_init.d/set-home-permissions.sh
 # See https://github.com/phusion/baseimage-docker/issues/186
 # Disable forward logging
 # Add script to set up permissions of home directory on myinit
-RUN useradd -m -s /bin/bash -G sudo,docker_env travis && \
+RUN useradd -m -s /bin/bash -G sudo travis && \
     echo "travis:docker" | chpasswd && \
     echo "travis ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers && \
     touch /etc/service/syslog-forwarder/down && \
