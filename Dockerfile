@@ -9,10 +9,6 @@ RUN su -u fenics && \
     conda config --set always_yes yes && \
     conda install anaconda conda-build=1.21.4 && \
     export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH && \
-    cd /home/fenics && \
-    git clone https://github.com/mikaem/fenics-recipes.git && \
-    cd fenics-recipes && \
-    git checkout docker-dev && \
     ./build_fenics.sh && \
     conda clean --all && rm /home/fenics/miniconda/conda-bld/linux-64/*.tar.bz2 && rm -rf /home/fenics/miniconda/conda-bld/git-cache/*
 USER root
