@@ -33,7 +33,7 @@ RUN . /home/travis/travis.conf && \
 
 USER root
 RUN cd /home/travis && \
-    source ~/travis.conf && \
+    . ~/travis.conf && \
     echo $CONDA_BUILD_LABEL && \
     git clone https://github.com/mikaem/conda-recipes.git && cd conda-recipes && git checkout docker-travis && cd .. && \
     git clone https://github.com/mikaem/fenics-recipes.git && cd fenics-recipes && git checkout docker-travis && \
