@@ -17,7 +17,7 @@ RUN cd /home/travis && \
     ./build_fenics_deps.sh && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \   
-    conda clean --all && rm -rf /opt/conda/miniconda/conda-bld/git-cache/*
+    conda clean --all && rm -rf /opt/conda/conda-bld/git-cache/*
 
 USER root
 
