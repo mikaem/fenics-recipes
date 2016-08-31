@@ -13,7 +13,6 @@ COPY set-home-permissions.sh /etc/my_init.d/set-home-permissions.sh
 RUN useradd -m -s /bin/bash -G sudo travis && \
     echo "travis:docker" | chpasswd && \
     echo "travis ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers && \
-    touch /etc/service/syslog-forwarder/down && \
     chmod +x /etc/my_init.d/set-home-permissions.sh
 
 USER travis
