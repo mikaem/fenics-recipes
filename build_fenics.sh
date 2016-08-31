@@ -1,3 +1,6 @@
+#!/bin/bash
+
+source /home/travis/fenics-recipes/travis.conf
 
 conda config --add channels mikaem/label/${CONDA_BUILD_LABEL}
 

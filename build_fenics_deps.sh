@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source /home/travis/fenics-recipes/travis.conf
+
 # Dependencies
 cd ../conda-recipes
 conda build boost
