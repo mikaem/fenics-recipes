@@ -9,7 +9,7 @@ WORKDIR /home/travis
 COPY travis.conf /home/travis/travis.conf
 
 RUN cd /home/travis && \
-    . ~/travis.conf && \
+    . /home/travis/travis.conf && \
     echo $CONDA_BUILD_LABEL && \
     git clone https://github.com/mikaem/conda-recipes.git && cd conda-recipes && git checkout docker-travis && cd .. && \
     git clone https://github.com/mikaem/fenics-recipes.git && cd fenics-recipes && git checkout docker-travis && \
