@@ -12,11 +12,11 @@ build:
   
 requirements:
   build:
-    - gcc
+    - gcc == 4.8.5
     - cmake
 
   run:
-    - libgcc
+    - libgcc ==4.8.5
 
 test:
   requires:
