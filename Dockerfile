@@ -1,4 +1,13 @@
 FROM continuumio/anaconda:latest
+
+USER travis
+RUN mkdir /home/travis
+
+COPY travis.conf /home/travis/travis.conf
+
+RUN . /home/travis/travis.conf
+    echo '. ~/travis.conf' >> /home/travis/.profile
+
 USER root
 RUN export DEBIAN_FRONTEND=noninteractive && \
     conda config --set always_yes yes && \
@@ -11,12 +20,6 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \   
     conda clean --all && rm -rf /opt/conda/miniconda/conda-bld/git-cache/*
-
-    
-COPY travis.conf /home/travis/travis.conf
-
-USER travis
-RUN echo '. ~/travis.conf' >> /home/travis/.profile
 
 USER root
 
