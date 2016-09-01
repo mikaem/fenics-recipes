@@ -1,11 +1,11 @@
 package:
   name: petsc
-  version: "3.6.2"
+  version: "3.7.3"
 
 source:
-  fn: petsc-lite-3.6.2.tar.gz
-  url: http://ftp.mcs.anl.gov/pub/petsc/release-snapshots/petsc-lite-3.6.2.tar.gz
-  md5: 5b6b7129ba02f4c6d107ae7671b80bb8
+  fn: petsc-lite-3.7.3.tar.gz
+  url: http://ftp.mcs.anl.gov/pub/petsc/release-snapshots/petsc-lite-3.7.3.tar.gz
+  md5: 74a81a79347ada5f0ecf92ff5d0637f4
 
 build:
   number: {{CONDA_BUILD_NUMBER}}

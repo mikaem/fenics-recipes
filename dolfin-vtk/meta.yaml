@@ -26,9 +26,9 @@ requirements:
     - ply ==3.8
     - boost
     - eigen3
-    - petsc <=3.6.2
-    - petsc4py <=3.6.0
-    - slepc <=3.6.2
+    - petsc <=3.7.3
+    - petsc4py <=3.7.0
+    - slepc <=3.7.2
     - hdf5-parallel
 
   run:
@@ -43,9 +43,9 @@ requirements:
     - ply ==3.8
     - boost
     - eigen3
-    - petsc <=3.6.2
-    - petsc4py <=3.6.0
-    - slepc <=3.6.2
+    - petsc <=3.7.3
+    - petsc4py <=3.7.0
+    - slepc <=3.7.2
     - hdf5-parallel
 
 test:
