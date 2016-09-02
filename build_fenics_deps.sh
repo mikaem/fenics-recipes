@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source /home/travis/fenics-recipes/travis.conf
+source ${HOME}/fenics-recipes/travis.conf
 
 # Dependencies
 cd ../conda-recipes

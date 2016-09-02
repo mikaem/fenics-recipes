@@ -1,8 +1,6 @@
 #!/bin/bash
 
-source /home/travis/fenics-recipes/travis.conf
-
-conda config --add channels mikaem/label/${CONDA_BUILD_LABEL}
+source ${HOME}/fenics-recipes/travis.conf
 
 # Upload all dependencies if not already there
 anaconda upload ${CONDA_BUILD_DIR}/boost-1.60.0-py27_${CONDA_BUILD_NUMBER}.tar.bz2 --label ${CONDA_BUILD_LABEL}
