@@ -4,11 +4,9 @@
 
 export CONDA_BUILD_DIR=/home/mikael/anaconda2/conda-bld/linux-64
 export FENICS_VERSION=2016.2.dev
-export FENICS_GIT_TAG=2016.1.0
-export CONDA_BUILD_NUMBER=11
-export CONDA_BUILD_LABEL=dev
+#!/bin/bash
 
-conda config --add channels mikaem/label/${CONDA_BUILD_LABEL}
+source ${HOME}/fenics-recipes/build_fenics.conf
 
 # # Dependency for this branch only
 # ## Need to install boost myself because of incompatible icu (see https://github.com/ContinuumIO/anaconda-issues/issues/700)
