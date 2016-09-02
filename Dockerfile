@@ -3,11 +3,14 @@
 FROM continuumio/anaconda:latest
 USER root
 
+COPY fenics.conf .
+
 RUN export DEBIAN_FRONTEND=noninteractive && \
     conda config --set always_yes yes && \
-    apt-get -y install build-essential && \
-    mkdir ${HOME} && \
-    cd ${HOME} && \
+    apt-get -y install build-essential && \    
+    /bin/bash -c "source fenics.conf"
+    mkdir /home/${CONDA_USERNAME} && \
+    cd /home/${CONDA_USERNAME} && \
     git clone https://github.com/mikaem/conda-recipes.git && cd conda-recipes && git checkout host-gcc && cd .. && \
     git clone https://github.com/mikaem/fenics-recipes.git && cd fenics-recipes && git checkout host-gcc && \
     chmod a+x build_fenics_deps.sh && \
