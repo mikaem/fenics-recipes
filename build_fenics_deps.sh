@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ${HOME}/fenics-recipes/build_fenics.conf
+source /home/${CONDA_USERNAME}/fenics-recipes/build_fenics.conf
 
 # Dependencies
 cd ../conda-recipes
@@ -10,7 +10,7 @@ cd ../fenics-recipes
 conda build hdf5-parallel
 conda build h5py-parallel
 conda build eigen3
-conda build hwloc
+#conda build hwloc
 conda build petsc
 conda build petsc4py
 conda build slepc

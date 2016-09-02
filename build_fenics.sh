@@ -6,7 +6,7 @@ export CONDA_BUILD_DIR=/home/mikael/anaconda2/conda-bld/linux-64
 export FENICS_VERSION=2016.2.dev
 #!/bin/bash
 
-source ${HOME}/fenics-recipes/build_fenics.conf
+source /home/${CONDA_USERNAME}/fenics-recipes/build_fenics.conf
 
 # # Dependency for this branch only
 # ## Need to install boost myself because of incompatible icu (see https://github.com/ContinuumIO/anaconda-issues/issues/700)
