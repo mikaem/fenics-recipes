@@ -8,8 +8,8 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
     apt-get -y install build-essential && \
     mkdir ${HOME} && \
     cd ${HOME} && \
-    git clone https://github.com/mikaem/conda-recipes.git && cd conda-recipes && git checkout docker-hostgcc && cd .. && \
-    git clone https://github.com/mikaem/fenics-recipes.git && cd fenics-recipes && git checkout docker-hostgcc && \
+    git clone https://github.com/mikaem/conda-recipes.git && cd conda-recipes && git checkout host-gcc && cd .. && \
+    git clone https://github.com/mikaem/fenics-recipes.git && cd fenics-recipes && git checkout host-gcc && \
     chmod a+x build_fenics_deps.sh && \
     ./build_fenics_deps.sh && \
     apt-get clean && \
