@@ -13,7 +13,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
     cd /home/${CONDA_USERNAME} && \
     apt-get -qq update && \
     apt-get -y --with-new-pkgs upgrade && \
-    apt-get -y install build-essential cmake gfortran nano vim pkg-config bison wget && \    
+    apt-get -y install build-essential cmake gfortran libmpich-dev nano vim pkg-config bison wget && \    
     git clone https://github.com/mikaem/conda-recipes.git && cd conda-recipes && git checkout host-gcc && cd .. && \
     git clone https://github.com/mikaem/fenics-recipes.git && cd fenics-recipes && git checkout host-gcc && \
     chmod a+x build_fenics_deps.sh && \
