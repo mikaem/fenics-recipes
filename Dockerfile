@@ -7,10 +7,11 @@ COPY build_fenics.conf ${PWD}
 
 RUN export DEBIAN_FRONTEND=noninteractive && \
     conda config --set always_yes yes && \
-    apt-get -y install build-essential && \    
     /bin/bash -c "source build_fenics.conf" && \
+    echo ${CONDA_USERNAME} && \
     mkdir /home/${CONDA_USERNAME} && \
     cd /home/${CONDA_USERNAME} && \
+    apt-get -y install build-essential && \    
     git clone https://github.com/mikaem/conda-recipes.git && cd conda-recipes && git checkout host-gcc && cd .. && \
     git clone https://github.com/mikaem/fenics-recipes.git && cd fenics-recipes && git checkout host-gcc && \
     chmod a+x build_fenics_deps.sh && \
